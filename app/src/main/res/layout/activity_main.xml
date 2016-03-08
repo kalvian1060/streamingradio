@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/textViewRadioUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:text="Listen PRAMBORS Radio" />
+
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progressBar1"
+        android:layout_below="@+id/progressBar1"
+        android:layout_marginTop="14dp"
+        android:text="Play" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewRadioUrl"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textViewRadioUrl"
+        android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+        android:indeterminateOnly="false"
+        android:maxHeight="20dip"
+        android:minHeight="20dip"
+        android:progressDrawable="@android:drawable/progress_horizontal" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonPlay"
+        android:layout_alignBottom="@+id/buttonPlay"
+        android:layout_toRightOf="@+id/buttonPlay"
+        android:text="Stop" />
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/prambos"
+        android:layout_below="@+id/buttonStop"/>
+
+    <TextView
+        android:id="@+id/story"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prambors FM is a commercial radio network based in Jakarta, Indonesia. Launched on March 18, 1971 in Jakarta, the purpose of station was to play pop music with targeted is teenagers. In 1970s-1990s, Prambors was one of the teenagers icon in Jakarta."/>
+
+</RelativeLayout>
